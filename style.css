@@ -1,8 +1,10 @@
-*{box-sizing: borderbox;}
-.header{background: rgb(205, 194, 194);}
+*{box-sizing: border-box}
+.header{background: rgb(209, 196, 196);}
 .header__menu{justify-content: right;margin: 0; padding:0}
 
-.header__menu__item a :hover{background: white;}
-.header__menu__item__icon{display: inline-block; width: 75px; height: 75px; position: relative;padding: 20px}
+
+.header__menu__item a :hover{background:rgb(226, 215, 215);}
+.header__menu__item a :hover{border-radius: 5px; padding: 5px;}
+.header__menu__item__icon{display: inline-block; width: 120px; height: 120px; position: relative;padding: 20px;}
 
 .img-dim{width: 100%;height:auto}
