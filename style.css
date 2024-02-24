@@ -1,10 +1,27 @@
 *{box-sizing: border-box}
-.header{background: rgb(209, 196, 196);}
-.header__menu{justify-content: right;margin: 0; padding:0}
+.container{display: flex;background: rgb(209, 196, 196);}
 
 
-.header__menu__item a :hover{background:rgb(226, 215, 215);}
-.header__menu__item a :hover{border-radius: 5px; padding: 5px;}
-.header__menu__item__icon{display: inline-block; width: 120px; height: 120px; position: relative;padding: 20px;}
+.container__menu, .container__rightmenu, .container__cover__menu{margin: 0; padding:0}
+.container__cover{background-image: url(https://www.addlance.com/blog/wp-content/uploads/2019/04/immagini-da-scaricare.jpg);}
+
+.container__rightmenu, .container__cover__menu{list-style-type: none;}
+.container__rightmenu{margin-left: auto;}
+.container__cover__menu{display: table;height:20%; width:20%}
+
+.container__menu__item, .container__cover__menu__item {width:90px; height: 90px;background-color: red;}
+
+
+.container__menu__item a :hover{background:rgb(226, 215, 215);}
+/*.container__menu__item a :hover{border-radius: 5px; padding: 5px;}*/
+.container__menu__item__icon{display: inline-block; width: 90px; height: 90px; position: relative;padding: 20px;}
+
+.container__cover__menu__item{padding: 20px;}
+.container__cover__menu__item a{text-decoration: none;color: black;}
+
+.container__rightmenu__item {width:90px;}
+.container__rightmenu__item a :hover{background:rgb(226, 215, 215);}
+
+.container__rightmenu__item__icon{display: inline-block; width: 90px; height: 90px; position: relative;}
 
 .img-dim{width: 100%;height:auto}
