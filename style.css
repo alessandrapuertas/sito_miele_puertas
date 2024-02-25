@@ -134,3 +134,5 @@ html, body{height: 100%;}
 .sfondo_cola{background: #caffe4}
 .sfondo_sera{background: #875d43;}
 .sfondo_prenota{background: rgb(253, 240, 208)}
+
+.footer{background-color: #a9764f; padding: 30px; color: white; margin-top: 40px;}
