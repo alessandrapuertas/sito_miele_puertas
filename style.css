@@ -1,22 +1,26 @@
 html, body{height: 100%;}
 *{box-sizing: border-box}
 *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-
+/* .animate{
+    -webkit-transition: all 0.3s ease-out ;
+        transition: all 0.3s ease-out; 
+} */
+.bigcontainer{height:70%}
 .bigcontainer{background-image: url(https://flawless.life/wp-content/uploads/2023/02/I-10-Migliori-Cocktail-Bar-di-Verona-COVER-facebook.jpg);}
 
 
 
-.container{display:flex;background: rgb(209, 196, 196);opacity: 0.6 }
-.header{display: flex;background: rgb(209, 196, 196);opacity: 0.6;font-size: 50px;padding:10px;justify-content: center;}
-
+.container{display:flex}
+.header{display: flex;font-size: 50px;justify-content: center;background: rgb(209, 196, 196);opacity: 0.7;}
+.header__copy__logo{padding:10px}
 
 .header a{text-decoration: none;color: #000;}
 
 
 /*.container{display: flex;background: rgb(209, 196, 196);}*/
 
-.container__menu{padding-top: 100px;}
-.container__menu, .container__rightmenu, .container__cover__menu{padding:0;margin: 0;opacity:0.6}
+.container__menu{padding-top: 100px;background: rgb(209, 196, 196);opacity: 0.7; height:70%}
+.container__menu, .container__rightmenu, .container__cover__menu{padding:0;margin: 0;opacity:0.7;height:70%}
 
 
 
@@ -25,7 +29,7 @@ html, body{height: 100%;}
 .container__cover__menu{display: table;height:20%; width:20%; display:flex}
 
 .container__menu__item1, .container__menu__item2, .container__menu__item3{width:100px; height:100px;display: table;}
-.container__menu__item__copy1, .container__menu__item__copy2, .container__menu__item__copy3{display: none;vertical-align: middle;margin:0; }
+.container__menu__item__copy1, .container__menu__item__copy2, .container__menu__item__copy3{display: none;vertical-align: middle;margin:0;  }
 .container__menu__item__copy1 a, .container__menu__item__copy2 a, .container__menu__item__copy3 a{background-color: aqua;}
 .textmenu{color: black;height:72px;width:100px; text-decoration: none;}
 
@@ -39,7 +43,7 @@ html, body{height: 100%;}
 /*.container__menu__item a :hover{border-radius: 5px; padding: 5px;}*/
 .container__menu__item__icon1, .container__menu__item__icon2, .container__menu__item__icon3{display: inline-block;  position: relative;padding:20px;margin:0}
 .is-hidden{display:none;}
-.is-shown{display:inline-block}
+.is-shown{display:flex;justify-content: center;}
 
 /*.container__cover__menu__item{height:0px;width:0px;overflow: hidden;}*/
 /*#container__cover__menu__item1, #container__cover__menu__item2, #container__cover__menu__item3{height:0px;width:0px;overflow: hidden;}*/
@@ -57,7 +61,7 @@ html, body{height: 100%;}
 .container__rightmenu__item__icon{display: inline-block; width: 90px; height: 90px; position: relative;padding:20px}
 
 
-.img-dim{width: 100%;height:auto; padding: 5px}
+.img-dim{width: 100%;height:auto;}
 
 .cover_colazioni{
     height: 70%;
