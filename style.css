@@ -59,9 +59,9 @@ html, body{height: 100%;}
 
 .img-dim{width: 100%;height:auto; padding: 5px}
 
-.cover{
+.cover_colazioni{
     height: 70%;
-    background-image: url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyfGVufDB8fDB8fHww);
+    background-image: url(https://images.unsplash.com/photo-1539639885136-56332d18071d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhcnxlbnwwfHwwfHx8MA%3D%3D);
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size:cover;
