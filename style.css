@@ -108,6 +108,8 @@ html, body{height: 100%;}
 .cover_caption{display: table; width: 100%; height: 100%; position: relative; z-index: 1; padding: 0 20px;}
 .cover_caption_copy{display: table-cell; vertical-align: middle; text-align: center; color: white;}
 
+.cover_caption_copy h1{margin-bottom: 0; }
+
 .card{width: 30%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image{width: 100%; height: auto;}
 .card_copy{padding: 5px 20px;}
