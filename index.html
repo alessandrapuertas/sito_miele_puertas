@@ -46,6 +46,14 @@
                             <img src="confetti.png" alt="" class = "img-dim">
                         </a>
                     </li>
+                    <li class= "container__menu__item4">
+                        <a href="serate.html" class ="container__menu__item__copy4">
+                            <p class = "textmenu">prenotazioni</p>
+                        </a>
+                        <a href="eventi.html" class ="container__menu__item__icon4">
+                            <img src="reservation.png" alt="" class = "img-dim">
+                        </a>
+                    </li>
         
                 </ul>
                 <!-- <div class = "container__cover">
@@ -143,6 +151,24 @@
         
 
         });
+        $(document).ready(function(){
+            $(".container__menu__item__icon4").mouseenter(function(e){
+                $(".container__menu__item__icon4").addClass('is-hidden');
+                e.preventDefault();
+                $(".container__menu__item__copy4").addClass('is-shown');
+                e.preventDefault();
+                
+            });
+            $(".container__menu__item4").mouseleave(function(e){
+                $(".container__menu__item__icon4").removeClass('is-hidden');
+                e.preventDefault();
+                $(".container__menu__item__copy4").removeClass('is-shown');
+                e.preventDefault();
+            });
+        
+
+        });
+
         
         
         
