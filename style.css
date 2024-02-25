@@ -18,10 +18,10 @@
 .container__rightmenu{margin-left: auto;}
 .container__cover__menu{display: table;height:20%; width:20%; display:flex}
 
-.container__menu__item1, .container__menu__item2, .container__menu__item3{width:100px; height:100px;display: table;border: #e47979;}
-.container__menu__item__copy1, .container__menu__item__copy2, .container__menu__item__copy3{display: none;vertical-align: middle;margin:0; padding: 0;}
-.container__menu__item__copy1 a, .container__menu__item__copy2 a, .container__menu__item__copy3 a{text-decoration: none;}
-.textcolazioni{color: black;height:72px;width:100px}
+.container__menu__item1, .container__menu__item2, .container__menu__item3{width:100px; height:100px;display: table;}
+.container__menu__item__copy1, .container__menu__item__copy2, .container__menu__item__copy3{display: none;vertical-align: middle;margin:0; }
+.container__menu__item__copy1 a, .container__menu__item__copy2 a, .container__menu__item__copy3 a{background-color: aqua;}
+.textmenu{color: black;height:72px;width:100px; text-decoration: none;}
 
 /*.container__menu__item{width:90px; height: 90px;}*/
 /*#container__cover__menu__item1 {background-color: red;}*/
@@ -50,7 +50,7 @@
 
 .container__rightmenu__item__icon{display: inline-block; width: 90px; height: 90px; position: relative;padding:20px}
 
-.img-dim{width: 100%;height:auto}
+.img-dim{width: 100%;height:auto; padding: 5px}
 
 .cover--colazioni{height: 50%;}
 
