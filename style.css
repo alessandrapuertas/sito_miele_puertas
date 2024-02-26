@@ -99,7 +99,7 @@ html, body{height: 100%;}
 .map{width: 300px;height: 300px;border-radius: 150px;}
 .banner__2{width:50%; float:left;height:100%; display:table}
 .banner__2__text{display: table-cell;vertical-align: middle;}
-
+.homepar{font-size:15px;color: #fff;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;}
 
 
 .img-dim{width: 100%;height:auto;}
@@ -112,7 +112,7 @@ html, body{height: 100%;}
     .container2{width: 100%; margin-left: 0px;margin-top: -10%;}
     /* /// */
     .buttons ul{flex-direction: column;align-items: center;}
-
+    
 
     .container__menu__item__icon1{display: block;}
     .container__menu__item__icon2{display: block;}
@@ -127,6 +127,9 @@ html, body{height: 100%;}
     .container__menu__item4{display: block;}
     
     .is-open{height: 300px; overflow: auto;}
+    .banner{height: 100%;}
+    .banner__1{width:100%;height:50%}
+    .banner__2{width:100%;height:50%}
 }
 
 .cover_colazioni{
