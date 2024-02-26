@@ -1,22 +1,40 @@
 html, body{height: 100%;}
 *{box-sizing: border-box}
 *{font-family: sans-serif;}
-/* .animate{
+    
+.animate{
     -webkit-transition: all 0.3s ease-out ;
         transition: all 0.3s ease-out; 
-} */
-.bigcontainer{height:80%;position:relative;z-index: 0;}
+} 
+.bigcontainer{height:80%;position:relative;z-index: 0;background: rgb(209, 196, 196);}
 .bigcontainer{background-image: url(https://flawless.life/wp-content/uploads/2023/02/I-10-Migliori-Cocktail-Bar-di-Verona-COVER-facebook.jpg);}
 
-.header{display: flex;font-size: 50px;justify-content: center;background:  rgb(209, 196, 196);opacity: 0.9;width:calc(100% - 100px);float: right;}
+/*body{display:flex;min-height:100%;flex-direction:column;}*/
+
+
+.container{display:flex;height: 20%;z-index: 1;}
+.header{display: flex;font-size: 50px;justify-content: center;background: rgb(209, 196, 196);opacity: 0.9;float: right;width:92%}
 .header__copy__logo{padding:10px}
 
 
 .header a{text-decoration: none;color: #000;}
 
+@media(max-width: 767px){
 
-.container{display:flex;height: 120%;z-index: 1;}
-
+    .container__menu__item__icon1{display: block;}
+    .container__menu__item__icon2{display: block;}
+    .container__menu__item__icon3{display: block;}
+    .container__menu__item__icon4{display: block;}
+    
+    .container__menu{width: 100%; height: 0px; overflow: hidden;}
+    
+    .container__menu__item1,
+    .container__menu__item2, 
+    .container__menu__item3,
+    .container__menu__item4{display: block;}
+    
+    .is-open{height: 300px; overflow: auto;}
+}
 
 
 /*.container{display: flex;background: rgb(209, 196, 196);}*/
@@ -141,4 +159,8 @@ html, body{height: 100%;}
 .sfondo_sera{background: #875d43;}
 .sfondo_prenota{background: rgb(253, 240, 208)}
 
-.footer{background-color: #a9764f; padding: 30px; color: white; margin-top: 40px;}
+.footer{background: #a9764f; padding: 30px; color: white; margin-top: 40px;}
+.footer1{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
+.footer2{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
+.footer3{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
+.footer4{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
