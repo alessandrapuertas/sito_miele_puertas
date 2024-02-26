@@ -8,7 +8,7 @@ html, body{height: 100%;}
 .bigcontainer{height:80%;position:relative;z-index: 0;background: rgb(209, 196, 196);}
 .bigcontainer{background-image: url(https://flawless.life/wp-content/uploads/2023/02/I-10-Migliori-Cocktail-Bar-di-Verona-COVER-facebook.jpg);}
 
- 
+/*body{display:flex;min-height:100%;flex-direction:column;}*/
 
 
 .container{display:flex;height: 20%;z-index: 1;}
@@ -139,4 +139,8 @@ html, body{height: 100%;}
 .sfondo_sera{background: #875d43;}
 .sfondo_prenota{background: rgb(253, 240, 208)}
 
-.footer{background-color: #a9764f; padding: 30px; color: white; margin-top: 40px;}
+.footer{background: #a9764f; padding: 30px; color: white; margin-top: 40px;}
+.footer1{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
+.footer2{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
+.footer3{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
+.footer4{background: #89fdc1; padding: 30px; color: black; margin-top: 40px;}
