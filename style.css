@@ -13,7 +13,7 @@ html, body{height: 100%;}
 
 
 .container{display:flex;height: 20%;z-index: 1;}
-.header{display: flex;font-size: 50px;justify-content: center;background: rgb(209, 196, 196);opacity: 0.9;float: right;width:92%}
+.header{display: flex;font-size: 50px;justify-content: center;background: rgb(209, 196, 196);opacity: 0.9;float:right;width:calc(100% - 100px);height: 77px;}
 .header__copy__logo{padding:10px}
 
 
@@ -39,7 +39,7 @@ html, body{height: 100%;}
 
 /*.container{display: flex;background: rgb(209, 196, 196);}*/
 
-.container__menu{background: rgb(209, 196, 196);opacity: 0.7; height:100%; width:100px;padding-top:5%;padding-bottom: 5%;position: fixed;float:bottom}
+.container__menu{background: rgb(209, 196, 196);opacity: 0.7; height:100%; width:100px;padding-top:5%;padding-bottom: 5%;position:absolute;float:bottom}
 .container__menu, .container__rightmenu, .container__cover__menu{margin:0;padding-left:0;padding-right:0;opacity:0.9;}
 
 
@@ -81,11 +81,28 @@ html, body{height: 100%;}
 
 .container__rightmenu__item__icon{display: inline-block; width: 90px; height: 90px; position: relative;padding:20px}
 /* .container2{z-index: 1;display: flex;width: 20px;height: 20px;} */
-.container2{background-color: #e39dff;}
 
 
-.container2__caption{ display: table;width: 100%;height:120%;}
+.container2{width:calc(100% - 100px); height:calc(100% - 77px); background-color: black;opacity: 0.7;margin-left: 100px;margin-top: -10%;}
+.container2__caption{ display: table;width: 100%;height:100%;background-color: #ef89fd;}
 .container2__caption__copy{ display: table-cell;vertical-align: middle;text-align: center;}
+.importanttextes{color: #fff;}
+
+.bigcontainer2{background-color:black;}
+.bigcontainer2__text{display: flex;justify-content: center;}
+.buttons{display: flex;justify-content: center;}
+.button {
+    background-color: white;
+    padding: 10px 20px;
+    margin: 20px 60px;
+    border-radius: 10px; 
+    color: black; 
+    border: none; 
+  }
+.buttons a{text-decoration: none;color:black}
+.buttons  a:hover{background-color:beige}
+.hometextes{font-size:30px;color: #fff;text-align: center;margin:0px; padding-top: 20px;padding-bottom: 10px;}
+
 
 .img-dim{width: 100%;height:auto;}
 
