@@ -70,8 +70,8 @@ html, body{height: 100%;}
 .container2{display:flex;width:calc(100%) ; height:calc(100% - 77px);z-index: 0;position: absolute;}
 
 .container2__caption{ display: table;width: 100%;height:100%;}
-.container2__caption__copy{ display: table-cell;vertical-align: middle;text-align: center;background-color: black;opacity: 0.7;z-index: 3;position: relative;}
-.importanttextes{color: black;}
+.container2__caption__copy{ display: table-cell;vertical-align: middle;text-align: center;background-color: black;opacity: 0.7;z-index: 5;position: relative;}
+.importanttextes{color: white;}
 
 .bigcontainer2{background-color:rgb(183, 173, 173);height:30%}
 .bigcontainer2__copy__text{display: flex;justify-content: center;}
@@ -107,6 +107,30 @@ html, body{height: 100%;}
 .banner__2__text{display: table-cell;vertical-align: middle;padding:10px}
 .homepar{font-size:15px;color:black;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;}
 
+.bigcontainer3{height:30%}
+.bigcontainer3__copy{background-color: rgb(233, 219, 219);}
+.bigcontainer3__copy__text{display: flex;justify-content: center;}
+.bigcontainer3__copy__buttons{display: flex;justify-content: center;margin: 0;padding: 0;} 
+
+.bigcontainer3__copy__buttons a{text-decoration: none;color:rgb(207, 187, 187)}
+.bigcontainer3__copy__buttons a:hover{background-color: rgb(225, 122, 122); opacity: 0.7;}
+.bigcontainer3__copy__buttons ul { display: flex;justify-content: center;padding: 0; margin: 0;}
+
+.bigcontainer3__copy__buttons ul li{display: flex;list-style: none;text-align: center;margin: 0 10px;}
+.bigcontainer3__copy__buttons ul { display: flex;justify-content: center;padding: 0; margin: 0;}
+
+.bigcontainer3__copy__buttons__button {
+    background-color: rgb(207, 83, 83);
+    width: 80px;
+
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border-radius: 10px; 
+    color: black; 
+    border: none; 
+    transition: transform 0.3s;
+    display: inline-block;
+  }
 
 .img-dim{width: 100%;height:auto;}
 @media(max-width: 767px){
