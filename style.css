@@ -71,20 +71,20 @@ html, body{height: 100%;}
 
 .container2__caption{ display: table;width: 100%;height:100%;}
 .container2__caption__copy{ display: table-cell;vertical-align: middle;text-align: center;background-color: black;opacity: 0.7;z-index: 3;position: relative;}
-.importanttextes{color: #fff;}
+.importanttextes{color: black;}
 
-.bigcontainer2{background-color:rgb(188, 50, 50);height:30%}
+.bigcontainer2{background-color:rgb(183, 173, 173);height:30%}
 .bigcontainer2__copy__text{display: flex;justify-content: center;}
 .bigcontainer2__copy__buttons{display: flex;justify-content: center;margin: 0;padding: 0;} 
 
 .bigcontainer2__copy__buttons a{text-decoration: none;color:rgb(207, 187, 187)}
-.bigcontainer2__copy__buttons a:hover{background-color:beige; transform: scale(1.2)}
+.bigcontainer2__copy__buttons a:hover{background-color: rgb(225, 122, 122); transform: scale(1.2)}
 .bigcontainer2__copy__buttons ul { display: flex;justify-content: center;padding: 0; margin: 0;}
 
 .bigcontainer2__copy__buttons ul li{display: flex;list-style: none;text-align: center;margin: 0 10px;}
 .bigcontainer2__copy__buttons ul { display: flex;justify-content: center;padding: 0; margin: 0;}
 
-.hometextes{font-size:30px;color: #fff;text-align: center;margin:0px; padding-top: 20px;padding-bottom: 10px;}
+.hometextes{font-size:30px;color:black;text-align: center;margin:0px; padding-top: 20px;padding-bottom: 10px;}
 
 .bigcontainer2__copy__buttons__button {
     background-color: rgb(207, 83, 83);
@@ -100,19 +100,19 @@ html, body{height: 100%;}
   }
 
 
-.banner{background: #1d372a;height: 100%;}
+.banner{background: rgb(209, 196, 196);height: 160%;}
 .banner__1{width:50%; float:left;height:100%;display: flex;justify-content: center; align-items: center;}
 .map{width: 300px;height: 300px;border-radius: 150px;}
 .banner__2{width:50%; float:left;height:100%; display:table}
 .banner__2__text{display: table-cell;vertical-align: middle;padding:10px}
-.homepar{font-size:15px;color: #fff;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;}
+.homepar{font-size:15px;color:black;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;}
 
 
 .img-dim{width: 100%;height:auto;}
 @media(max-width: 767px){
     /* togliamo menu verticale con icone e ridimensioniamo */
     .container{display:none}
-    .header{width:100%;height: 77px;display:block}
+    .header{width:100%;height: 77px;}
     
     
     .container2{width: 100%; }
