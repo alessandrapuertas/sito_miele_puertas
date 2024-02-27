@@ -13,22 +13,22 @@
 <body>
     
     <div class ="bigcontainer clearfix">
-        <header class = "header clearfix">
+        <header class = "header">
             <a href="index.html" class ="header__copy__logo">Snap </a>
-            <!-- <a href="" class ="header__icon-bar">
+            <a href="" class ="header__icon-bar">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
-            <ul class = "header__menu clearfix">
+            <ul class = "header__menu">
                 
                 <li class = "header__menu__item"><a href="colazioni.html" >colazioni</a></li>
                 <li class = "header__menu__item"><a href="aperitivi.html" >aperitivi</a></li>
                 <li class = "header__menu__item"><a href="serate.html" >serate</a></li>
-                <li class = "header__menu__item"><a href="prenotazioni.html" >prenotazioni</a></li>
+                <li class = "header__menu__item"><a href="prenotazioni.html" >prenota la tua serata</a></li>
                 
 
-            </ul> -->
+            </ul>
         </header>
         <section class = "homecontainer">
             <section class = "container">
@@ -121,12 +121,12 @@
         </section>
         
     </div>
-        </section>
+    
         
     <div class = "bigcontainer2">
         <div class = "bigcontainer2__copy">
             <div class = "bigcontainer2__copy__text">
-                <p class = "hometextes">ordina da casa!</p>
+                <h1 class = "hometextes">ordina da casa!</h1>
             </div>
             
             <div class = "bigcontainer2__copy__buttons">
@@ -148,9 +148,9 @@
             <div class= "banner__2__text">
                 <h1 class = "hometextes">dove siamo e i nostri orari</h1>
                 
-                <p class = "homepar">da Lunedì a Giovedì, 06:30 - 21:00</p>
-                <p class = "homepar">Venerdì e Sabato, 12:30 - 1:00</p>
-                <p class = "homepar">Domenica, 12:30 alle 21:00</p>
+                <h2 class = "homepar">da Lunedì a Giovedì, 06:30 - 21:00</h2>
+                <h2 class = "homepar">Venerdì e Sabato, 12:30 - 1:00</h2>
+                <h2 class = "homepar">Domenica, 12:30 alle 21:00</h2>
                 
             </div>
             
@@ -162,14 +162,14 @@
     <div class = "bigcontainer3">
         <div class = "bigcontainer3__copy">
             <div class = "bigcontainer3__copy__text">
-                <p class = "hometextes">contattaci:</p>
+                <h1 class = "hometextes">contattaci:</h1>
             </div>
             
             <div class = "bigcontainer3__copy__buttons">
                 <ul>
                     <li><a href="" class = "bigcontainer3__copy__buttons__button"><img src="immagini/facebook.png" alt="" class = "img-dim"></a></li>
                     <li><a href="" class = "bigcontainer3__copy__buttons__button"><img src="immagini/instagram.png" alt="" class = "img-dim"></a></li>
-                    <li><a href="" class = "bigcontainer3__copy__buttons__button"><img src="immagini/whatsapp (2).png" alt="" class = "img-dim"></a></li>
+                    <li><a href="https://wa.me/393393257645//?text=urlencodedtext" class = "bigcontainer3__copy__buttons__button"><img src="immagini/whatsapp (2).png" alt="" class = "img-dim"></a></li>
 
                     
                 </ul>
@@ -180,7 +180,7 @@
         
         
     </div>
-
+    
     <footer class="footer">
         <p class ="homepar">Copyright - 2020 Morenoale.it</p>
     </footer>
@@ -263,32 +263,12 @@
         });
 
         $(document).ready(function(){
-            $(".container__menu__item__icon1").click(function(e){
+            $(".header").click(function(e){
                 $(".container__menu").toggleClass('is-open');
                 e.preventDefault();
             });
         });
         
-        $(document).ready(function(){
-            $(".container__menu__item__icon2").click(function(e){
-                $(".container__menu").toggleClass('is-open');
-                e.preventDefault();
-            });
-        });
-
-        $(document).ready(function(){
-            $(".container__menu__item__icon3").click(function(e){
-                $(".container__menu").toggleClass('is-open');
-                e.preventDefault();
-            });
-        });
-
-        $(document).ready(function(){
-            $(".container__menu__item__icon4").click(function(e){
-                $(".container__menu").toggleClass('is-open');
-                e.preventDefault();
-            });
-        });
         
     </script>
     
