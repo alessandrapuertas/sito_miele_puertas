@@ -6,6 +6,8 @@ html, body{height: 100%;}
     -webkit-transition: all 0.3s ease-out ;
         transition: all 0.3s ease-out; 
 } 
+
+
 .bigcontainer{height:80%;position:relative;z-index: 0;background: rgb(209, 196, 196);}
 .bigcontainer{background-image: url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
 
@@ -137,6 +139,8 @@ html, body{height: 100%;}
   }
 
 .img-dim{width: 100%;height:auto;}
+
+/* SU TELEFONO */
 @media(max-width: 767px){
     /* togliamo menu verticale con icone e ridimensioniamo */
     .container{display:none}
@@ -174,6 +178,7 @@ html, body{height: 100%;}
 
 }
 
+/* COVER SINGLE PAGE*/
 .cover_colazioni{
     height: 70%;
     background-image: url(https://images.unsplash.com/photo-1539639885136-56332d18071d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhcnxlbnwwfHwwfHx8MA%3D%3D);
@@ -218,6 +223,8 @@ html, body{height: 100%;}
 .cover_caption_copy{display: table-cell; vertical-align: middle; text-align: center; color: white;}
 
 .cover_caption_copy h1{margin-bottom: 0; }
+
+/*STRUTTURA  PRENOTAZIONE*/
 
 #prodotti{
     width: 100%;
@@ -288,6 +295,8 @@ a{
     text-decoration: none;
 }
 
+/*STRUTTURA COLAZIONE*/
+
 .card-container{
     margin: 0px;
     padding: 0px;
@@ -308,7 +317,7 @@ a{
     margin: 20px;
 }
 
-.card img{
+.cardd img{
     width: 100%;
     height: auto;
 }
@@ -338,6 +347,8 @@ a{
     color: #fff;
 
 }
+
+/*STRUTTURA APERITIVO*/
 
 .containers{
     margin: 0px;
@@ -402,10 +413,67 @@ p{
 
 .sfondo_ape{background: #e39dff; display: flex; background: whitesmoke; justify-content: center; height: 100vh; align-items: center;}
 
+/*STRUTTURA SERATA*/
+.conta{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    height: 400px;
+    width: 600px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.conta:hover .text{
+    visibility: visible;
+}
+
+.conta:hover img{
+    transform: scale(1.1);
+}
+
+.sfondo_sera{background: #875d43; display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; background-color: aliceblue;}
+
+
+.image{
+    width: 600px;
+    height: 400px;
+}
+
+.image img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.text{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: ghostwhite;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: .8;
+    color: #000000;
+    visibility: hidden;
+}
+
+.text h3{
+    margin-bottom: 1.2rem;
+}
+
+
 /*.card{width: 30%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image{width: 100%; height: auto;}
 .card_copy{padding: 5px 20px;}
-.card_copy h3{margin-bottom: 0;}
+.card_copy h3{margin-bottom: 0;}*/
 
 /*.card_prenota{border: 1px solid white; width:47%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image_prenota{width: 100%; height: auto;}
@@ -420,11 +488,11 @@ p{
 .cola_copy{max-width: 400px;margin: 0px auto; background: white;margin-top: -40px; padding: 20px 40px; position: relative; background-position: center;}
 .ape_copy{max-width: 400px;margin: 0px auto; background: white;margin-top: -40px; padding: 20px 40px; position: relative;}
 .sera_copy{max-width: 400px;margin: 0px auto; background: white;margin-top: -40px; padding: 20px 40px; position: relative; }
-.prenota_copy{max-width: 400px;margin: 0px auto; background: white;margin-top: -40px; margin-bottom: 30px; padding: 20px 40px; position: relative;}
+.prenota_copy{max-width: 400px;margin: 0px auto; color: #000; background: white;margin-top: -40px; margin-bottom: 30px; padding: 20px 40px; position: relative;}
 
 
 .sfondo_cola{background: #caffe4}
-.sfondo_sera{background: #875d43;}
+
 .sfondo_prenota{background: rgb(253, 240, 208)}
 
 .footer{background: #a9764f; padding: 30px; color: white; margin-top: 40px;}
