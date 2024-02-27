@@ -332,8 +332,70 @@ a{
 
 }
 
+.containers{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 
-.card{width: 30%; margin: 0 1.5%; background: #fff; float: left;}
+}
+
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.containers-card{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.intro{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(183, 173, 173);
+    color: white;
+    transition: .5s;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 220px;
+    bottom: 240px;
+    background: black;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img{
+    transform:scale(1.1) rotate(-3deg);
+}
+
+.sfondo_ape{background: #e39dff; display: flex; background: whitesmoke; justify-content: center; height: 100vh; align-items: center;}
+
+/*.card{width: 30%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image{width: 100%; height: auto;}
 .card_copy{padding: 5px 20px;}
 .card_copy h3{margin-bottom: 0;}
@@ -353,7 +415,7 @@ a{
 .sera_copy{max-width: 400px;margin: 0px auto; background: white;margin-top: -40px; padding: 20px 40px; position: relative; }
 .prenota_copy{max-width: 400px;margin: 0px auto; background: white;margin-top: -40px; margin-bottom: 30px; padding: 20px 40px; position: relative;}
 
-.sfondo_ape{background: #e39dff;}
+
 .sfondo_cola{background: #caffe4}
 .sfondo_sera{background: #875d43;}
 .sfondo_prenota{background: rgb(253, 240, 208)}
