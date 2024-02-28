@@ -14,21 +14,26 @@
     
     <div class ="bigcontainer clearfix">
         <header class = "header">
-            <a href="index.html" class ="header__copy__logo">Snap </a>
-            <a href="" class ="header__icon-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <ul class = "header__menu">
+            <div class = "header__1">
+                <a href="index.html" class ="header__1__copy__logo">Snap </a>
+                <a href="" class ="header__1__icon-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class = "header__2">
+                <ul class = "header__2__menu">
                 
-                <li class = "header__menu__item"><a href="colazioni.html" >colazioni</a></li>
-                <li class = "header__menu__item"><a href="aperitivi.html" >aperitivi</a></li>
-                <li class = "header__menu__item"><a href="serate.html" >serate</a></li>
-                <li class = "header__menu__item"><a href="prenotazioni.html" >prenota la tua serata</a></li>
-                
-
-            </ul>
+                    <li class = "header__2__menu__item"><a href="colazioni.html" >colazioni</a></li>
+                    <li class = "header__2__menu__item"><a href="aperitivi.html" >aperitivi</a></li>
+                    <li class = "header__2__menu__item"><a href="serate.html" >serate</a></li>
+                    <li class = "header__2__menu__item"><a href="prenotazioni.html" >prenota la tua serata</a></li>
+                    
+    
+                </ul>
+            </div>
+            
         </header>
         <section class = "homecontainer">
             <section class = "container">
@@ -71,41 +76,7 @@
                     </li>
         
                 </ul>
-                <!-- <div class = "container__cover">
-                    <ul class = "container__cover__menu">
-                        <li class = "container__cover__menu__item">
-                            <a href="colazioni.html" class ="container__cover__menu__item__icon">colazioni</a>
-                        </li>
-                        <li class = "container__cover__menu__item">
-                            <a href="colazioni.html" class ="container__cover__menu__item__icon">aperitivi</a>
-                        </li>
-                        <li class = "container__cover__menu__item">
-                            <a href="colazioni.html" class ="container__cover__menu__item__icon">serate</a>
-                        </li>
-                        
-                       
-                    </ul>
-                </div> -->
                 
-                <!-- <ul class = "container__rightmenu">
-                    <li class = "container__rightmenu__item">
-                        <a href="colazioni.html" class ="container__rightmenu__item__icon">
-                            <img src="croissant.png" alt="" class = "img-dim">
-                        </a>
-                    </li>
-                    <li class = "container__rightmenu__item">
-                        <a href="colazioni.html" class ="container__rightmenu__item__icon">
-                            <img src="croissant.png" alt="" class = "img-dim">
-                        </a>
-                    </li>
-                    <li class = "container__rightmenu__item">
-                        <a href="colazioni.html" class ="container__rightmenu__item__icon">
-                            <img src="croissant.png" alt="" class = "img-dim">
-                        </a>
-                    </li>
-                    
-        
-                </ul>    -->
                 
         </section>
         
@@ -263,8 +234,8 @@
         });
 
         $(document).ready(function(){
-            $(".header").click(function(e){
-                $(".container__menu").toggleClass('is-open');
+            $(".header__1__icon-bar").click(function(e){
+                $(".header__2__menu").toggleClass('is-open');
                 e.preventDefault();
             });
         });
