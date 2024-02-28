@@ -424,7 +424,7 @@ p{
 
 /*STRUTTURA SERATA*/
 .sfondo_sera{background: #875d43; display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vh; flex-direction: column; background-color: aliceblue;}
-/*
+
 .conta{
     margin: 0;
     padding: 0;
@@ -481,15 +481,15 @@ p{
 }*/
 
 
-/*.card{width: 30%; margin: 0 1.5%; background: #fff; float: left;}
+.card{width: 30%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image{width: 100%; height: auto;}
 .card_copy{padding: 5px 20px;}
 .card_copy h3{margin-bottom: 0;}*/
 
-/*.card_prenota{border: 1px solid white; width:47%; margin: 0 1.5%; background: #fff; float: left;}
+.card_prenota{border: 1px solid white; width:47%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image_prenota{width: 100%; height: auto;}
 .card_copy_prenota{padding: 5px 20px;}
-.card_copy_prenota h3{margin-bottom: 0;}*/
+.card_copy_prenota h3{margin-bottom: 0;}
 
 .card_sera{border: 1px solid white; width:47%; margin: 0 1.5%; background: #fff; float: left;}
 .card_image_sera{width: 100%; height: auto;}
