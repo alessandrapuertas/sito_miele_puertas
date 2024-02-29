@@ -29,11 +29,11 @@ html, body{height: 100%;}
 
 .container__menu{background: rgb(209, 196, 196);opacity: 0.7; height:100%; width:100%;padding-top:5%;padding-bottom: 5%;position:absolute;float:bottom;}
 
-.container__menu, .container__rightmenu, .container__cover__menu{margin:0;padding-left:0;padding-right:0;opacity:0.9;}
+.container__menu, .container__cover__menu{margin:0;padding-left:0;padding-right:0;opacity:0.9;}
 
 
 
-.container__rightmenu, .container__cover__menu{list-style-type: none;}
+ .container__cover__menu{list-style-type: none;}
 .container__rightmenu{margin-left: auto;position: fixed;}
 .container__cover__menu{display: table;height:20%; width:20%; display:flex}
 
@@ -104,6 +104,11 @@ html, body{height: 100%;}
     display: inline-block;
   }
 
+.banners{background: rgb(165, 159, 159);height: 50%;}
+.banners__1{width:40%; float:left;height:100%;display: flex;justify-content: center; align-items: center;}
+.banners__2{width:60%; float:left;height:100%; display:table}
+.banners__2__text{display: table-cell;vertical-align: middle;padding:10px}
+.homepar2{font-size:15px;color:black;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;padding-left:30px ;padding-right:30px ;line-height: 1.5;}
 
 .banner{background: rgb(209, 196, 196);height: 160%;}
 .banner__1{width:50%; float:left;height:100%;display: flex;justify-content: center; align-items: center;}
@@ -138,6 +143,7 @@ html, body{height: 100%;}
   }
 
 .img-dim{width: 100%;height:auto;}
+.img-dim2{width: 60%;height:auto;}
 
 /* SU TELEFONO */
 @media(max-width: 767px){
@@ -181,6 +187,11 @@ html, body{height: 100%;}
     .banner{height: 110%;}
     .banner__1{width:100%;height:50%}
     .banner__2{width:100%;height:50%}
+
+    .banners{height: 100%;}
+    .banners__1{width:100%;height:50%}
+    .banners__2{width:100%;height:50%}
+
     .map{width: 150px;height: 150px;}
 
 }
@@ -313,7 +324,7 @@ a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .cardd{
@@ -422,6 +433,7 @@ p{
 .sfondo_ape{background: #e39dff; display: flex; background: whitesmoke; justify-content: center; height: 100vh; align-items: center;}
 
 /*STRUTTURA SERATA*/
+.header__serate{margin-top: 280px;}
 .sfondo_sera{background: #875d43; display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; background-color: aliceblue;}
 /*
 .conta{
