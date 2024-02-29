@@ -34,7 +34,7 @@ html, body{height: 100%;}
 
 
 
- .container__cover__menu{list-style-type: none;}
+.container__cover__menu{list-style-type: none;}
 .container__rightmenu{margin-left: auto;position: fixed;}
 .container__cover__menu{display: table;height:20%; width:20%; display:flex}
 
