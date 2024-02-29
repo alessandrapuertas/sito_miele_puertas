@@ -79,11 +79,12 @@ html, body{height: 100%;}
 .container2__caption__copy{ display: table-cell;vertical-align: middle;text-align: center;background-color: black;opacity: 0.7;z-index: 5;position: relative;}
 .importanttextes{color: white;}
 
-.bigcontainer2{background-color:rgb(183, 173, 173);height:30%}
+.bigcontainer2{color: rgb(209, 196, 196);height:50%}
+.bigcontainer2__copy{background: rgb(209, 196, 196);}
 .bigcontainer2__copy__text{display: flex;justify-content: center;}
 .bigcontainer2__copy__buttons{display: flex;justify-content: center;margin: 0;padding: 0;} 
 
-.bigcontainer2__copy__buttons a{text-decoration: none;color:rgb(207, 187, 187)}
+.bigcontainer2__copy__buttons a{text-decoration: none;color:rgb(217, 201, 201)}
 .bigcontainer2__copy__buttons a:hover{background-color: rgb(225, 122, 122); transform: scale(1.2)}
 .bigcontainer2__copy__buttons ul { display: flex;justify-content: center;padding: 0; margin: 0;}
 
@@ -105,21 +106,22 @@ html, body{height: 100%;}
     display: inline-block;
   }
 
-.banners{background: rgb(165, 159, 159);height: 50%;}
-.banners__1{width:40%; float:left;height:100%;display: flex;justify-content: center; align-items: center;}
-.banners__2{width:60%; float:left;height:100%; display:table}
+.banners{background:rgb(199, 183, 183);height: 60%;}
+.banners__1{width:50%; float:left;height:100%;display: flex;justify-content: center; align-items: center;}
+.banners__1__image{width: 300px;height: 300px;border-radius: 150px;}
+.banners__2{width:50%; float:left;height:100%; display:table}
 .banners__2__text{display: table-cell;vertical-align: middle;padding:10px}
 .homepar2{font-size:15px;color:black;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;padding-left:30px ;padding-right:30px ;line-height: 1.5;}
 
-.banner{background: rgb(209, 196, 196);height: 160%;}
+.banner{background: rgb(222, 211, 211);height: 100%;}
 .banner__1{width:50%; float:left;height:100%;display: flex;justify-content: center; align-items: center;}
 .map{width: 300px;height: 300px;border-radius: 150px;}
 .banner__2{width:50%; float:left;height:100%; display:table}
 .banner__2__text{display: table-cell;vertical-align: middle;padding:10px}
 .homepar{font-size:15px;color:black;text-align: center;margin:0px; padding-top: 5px;padding-bottom: 0px;}
 
-.bigcontainer3{height:30%}
-.bigcontainer3__copy{background-color: rgb(233, 219, 219);}
+.bigcontainer3{height:40%}
+.bigcontainer3__copy{background-color:rgb(245, 230, 230);}
 .bigcontainer3__copy__text{display: flex;justify-content: center;width: 100%;}
 .bigcontainer3__copy__buttons{display: flex;justify-content: center;margin: 0;padding: 0;} 
 
@@ -144,7 +146,7 @@ html, body{height: 100%;}
   }
 
 .img-dim{width: 100%;height:auto;}
-.img-dim2{width: 60%;height:auto;}
+.img-dim2{width: 40%;height:auto;}
 
 /* SU TELEFONO */
 @media(max-width: 767px){
@@ -187,13 +189,15 @@ html, body{height: 100%;}
     
     .banner{height: 110%;}
     .banner__1{width:100%;height:50%}
+    .map{width: 150px;height: 150px;}
     .banner__2{width:100%;height:50%}
 
-    .banners{height: 100%;}
-    .banners__1{width:100%;height:50%}
+    .banners{height: 70%;}
+    .banners__1{width:100%;height:30%}
     .banners__2{width:100%;height:50%}
+    .banners__1__image{width: 150px;height: 150px;}
 
-    .map{width: 150px;height: 150px;}
+    
 
 }
 
