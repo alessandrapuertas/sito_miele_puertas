@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
@@ -23,7 +23,7 @@
     <div class ="bigcontainer clearfix">
         <header class = "header">
             <div class = "header__1">
-                <a href="index.html" class ="header__1__copy__logo"><img src="immagini/bar-counter.png" alt="" class = "img-dim"></a>
+                <a href="index.php" class ="header__1__copy__logo"><img src="../immagini/bar-counter.png" alt="" class = "img-dim"></a>
                 <a href="" class ="header__1__icon-bar">
                     <span></span>
                     <span></span>
@@ -33,10 +33,10 @@
             <div class = "header__2">
                 <ul class = "header__2__menu">
                 
-                    <li class = "header__2__menu__item"><a href="pagina/colazioni.html" >colazioni</a></li>
-                    <li class = "header__2__menu__item"><a href="pagina/aperitivi.html" >aperitivi</a></li>
-                    <li class = "header__2__menu__item"><a href="pagina/serate.html" >serate</a></li>
-                    <li class = "header__2__menu__item"><a href="pagina/prenotazioni.html" >prenota la tua serata</a></li>
+                    <li class = "header__2__menu__item"><a href="colazioni.html" >colazioni</a></li>
+                    <li class = "header__2__menu__item"><a href="aperitivi.html" >aperitivi</a></li>
+                    <li class = "header__2__menu__item"><a href="serate.html" >serate</a></li>
+                    <li class = "header__2__menu__item"><a href="prenotazioni.html" >prenota la tua serata</a></li>
                     
     
                 </ul>
@@ -48,38 +48,38 @@
             
                 <ul class = "container__menu">
                     <li class = "container__menu__item1 ">
-                        <a href="pagina/colazioni.html" class ="container__menu__item__copy1">
+                        <a href="colazioni.html" class ="container__menu__item__copy1">
                             colazioni
                         </a>
-                        <a href="pagina/colazioni.html" class ="container__menu__item__icon1">
-                            <img src="immagini/croissant.png" alt="" class = "img-dim">
+                        <a href="colazioni.html" class ="container__menu__item__icon1">
+                            <img src="../immagini/croissant.png" alt="" class = "img-dim">
                         </a>
                         
                     </li>
                     <li class = "container__menu__item2">
-                        <a href="pagina/aperitivi.html" class ="container__menu__item__copy2">
+                        <a href="aperitivi.html" class ="container__menu__item__copy2">
                             aperitivi
                         </a>
-                        <a href="pagina/aperitivi.html" class ="container__menu__item__icon2">
-                            <img src="immagini/cocktail.png" alt="" class = "img-dim">
+                        <a href="aperitivi.html" class ="container__menu__item__icon2">
+                            <img src="../immagini/cocktail.png" alt="" class = "img-dim">
                         </a>
                         
                     </li>
                     
                     <li class= "container__menu__item3">
-                        <a href="pagina/serate.html" class ="container__menu__item__copy3">
+                        <a href="serate.html" class ="container__menu__item__copy3">
                             serate
                         </a>
-                        <a href="pagina/serate.html" class ="container__menu__item__icon3">
-                            <img src="immagini/confetti.png" alt="" class = "img-dim">
+                        <a href="serate.html" class ="container__menu__item__icon3">
+                            <img src="../immagini/confetti.png" alt="" class = "img-dim">
                         </a>
                     </li>
                     <li class= "container__menu__item4">
-                        <a href="pagina/prenotazioni.html" class ="container__menu__item__copy4">
+                        <a href="prenotazioni.html" class ="container__menu__item__copy4">
                             prenota la tua serata
                         </a>
-                        <a href="pagina/prenotazioni.html" class ="container__menu__item__icon4">
-                            <img src="immagini/reservation.png" alt="" class = "img-dim">
+                        <a href="prenotazioni.html" class ="container__menu__item__icon4">
+                            <img src="../immagini/reservation.png" alt="" class = "img-dim">
                         </a>
                     </li>
         
@@ -109,13 +109,13 @@
                 
                 <h2 class = "homepar2">Benvenuti nel cuore della vivace scena urbana, dove l'atmosfera accogliente si fonde con un gusto unico nel nostro nuovo bar. </h2>
                 <h2 class = "homepar2"> Che si tratti di una pausa rigenerante durante il giorno o di un momento di divertimento serale, ci impegniamo a offrirvi un servizio impeccabile e un'esperienza indimenticabile.</h2>
-                <a class = "bigcontainer2__copy__buttons__button2" href="pagina/ilteam.html">Scopri il nostro team!</a>
+                <a class = "bigcontainer2__copy__buttons__button2" href="ilteam.html">Scopri il nostro team!</a>
                 
             </div>
             
         </div>
         <div class = "banners__1">  
-            <img src="immagini/croissants.jpg" alt="" class = "banners__1__image img-dim2">        
+            <img src="../immagini/croissants.jpg" alt="" class = "banners__1__image img-dim2">        
         </div>
     </section>
 
@@ -163,9 +163,9 @@
             
             <div class = "bigcontainer3__copy__buttons">
                 <ul>
-                    <li><a href="https://www.facebook.com/" class = "bigcontainer3__copy__buttons__button"><img src="immagini/facebook.png" alt="" class = "img-dim"></a></li>
-                    <li><a href="https://www.instagram.com/" class = "bigcontainer3__copy__buttons__button"><img src="immagini/instagram.png" alt="" class = "img-dim"></a></li>
-                    <li><a href="https://wa.me/393393257645//?text=urlencodedtext" class = "bigcontainer3__copy__buttons__button"><img src="immagini/whatsapp (2).png" alt="" class = "img-dim"></a></li>
+                    <li><a href="https://www.facebook.com/" class = "bigcontainer3__copy__buttons__button"><img src="../immagini/facebook.png" alt="" class = "img-dim"></a></li>
+                    <li><a href="https://www.instagram.com/" class = "bigcontainer3__copy__buttons__button"><img src="../immagini/instagram.png" alt="" class = "img-dim"></a></li>
+                    <li><a href="https://wa.me/393393257645//?text=urlencodedtext" class = "bigcontainer3__copy__buttons__button"><img src="../immagini/whatsapp (2).png" alt="" class = "img-dim"></a></li>
 
                     
                 </ul>

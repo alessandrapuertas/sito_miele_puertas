@@ -1,6 +1,7 @@
 <?php
     if (isset($_POST["username"])) $username = $_POST["username"]; else $username = "";
     if (isset($_POST["password"])) $password = $_POST["password"]; else $password = "";
+    
 ?>
 
 
@@ -13,15 +14,14 @@
     <title>login snap</title>
 </head>
 <body>
-    <?php
-        require("pagine/nav.php");
-    ?>  
-    <div>
+    
+    <div class = "contenuto">
+        
         <h1>bar snap</h1>
 		<h2>effettua il login!</h2>
 
         <form action="" method="post">
-            <table >
+            <table class="tab_input">
                 <tr>
                     <td><label for="username">username: </label></td>
                     <td><input type="text" name="username" id="username" value = "<?php echo $username ?>" required></td>
@@ -52,14 +52,12 @@
                     $_SESSION["username"] = $username;
 
                     $conn->close();
-					header("location: pagine/home.php");
+					header("location: pagina/index.php");
                 }
             }
         ?>
     </div>
-    <?php 
-        require('pagine/footer.php');
-    ?>	
+    
 </body>
 </html>
 
