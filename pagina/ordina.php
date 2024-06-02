@@ -27,22 +27,20 @@
 	<title>ordina con noi</title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
-    
-	
+<body style ="background: rgb(209, 196, 196)">
     
 	<div class="contenuto">
 		<h1 style="text-align: center; margin-top: 0px">ordina con noi!</h1>
 		<p>cosa vuoi ordinare?</p>
 		<form method="post" action="">
-			<table >
+			<table style = "text-align: left; margin: auto;">
 				<tr>
 					<td><label for="nome_cibo">cerca:</label></td>
-
                     <td><input class="input_ricerca" type="text" name="nome_cibo" id="nome_cibo" value="<?php echo isset($_POST['nome_cibo']) ? $_POST['nome_cibo'] : ''; ?>"></td>
 				</tr>
 				<tr>
-                    <p><td style="text-align: center; padding-top: 10px" colspan="2"><input type="checkbox" name="glutenfree" id="glutenfree" value="si"></td> glutenfree ?</p>
+                    <td><label for="glutenfree">glutenfree: </label></td>
+                    <td colspan="2"><input type="checkbox" name="glutenfree" id="glutenfree" value="si"></td>
                 </tr>
 				<tr>
 					<td style="text-align: center; padding-top: 10px" colspan="2"><input type="submit" value="cerca"/></td>
@@ -88,7 +86,7 @@
 
                             echo <<<EOD
                                 <div >
-                                    <div >
+                                    <div class ="card_cibo">
                                         <div >
                                             <img src="../immagini/$foto" alt="$foto">
                                         </div>
@@ -96,7 +94,7 @@
                                             <div >
                                                 <p>$nome</p>
 
-                                                <p ><a href="scheda-libro.php?cod_cibo=$id_cibo">scopri di piu!</a></p>
+                                                <p ><a href="infocibo.php?id_cibo=$id_cibo">scopri di piu!</a></p>
                            
                             
                                                 <p><input type='checkbox' name='id_cibi[]' value='$id_cibo'/> seleziona</p>
