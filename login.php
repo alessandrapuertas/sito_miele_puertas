@@ -3,6 +3,7 @@
     if (isset($_POST["password"])) $password = $_POST["password"]; else $password = "";
 ?>
 
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,9 +13,9 @@
     <title>login snap</title>
 </head>
 <body>
-    <!-- <?php
+    <?php
         require("pagine/nav.php");
-    ?>   -->
+    ?>  
     <div>
         <h1>bar snap</h1>
 		<h2>effettua il login!</h2>
