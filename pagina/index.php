@@ -109,7 +109,7 @@
                 
                 <h2 class = "homepar2">Benvenuti nel cuore della vivace scena urbana, dove l'atmosfera accogliente si fonde con un gusto unico nel nostro nuovo bar. </h2>
                 <h2 class = "homepar2"> Che si tratti di una pausa rigenerante durante il giorno o di un momento di divertimento serale, ci impegniamo a offrirvi un servizio impeccabile e un'esperienza indimenticabile.</h2>
-                <a class = "bigcontainer2__copy__buttons__button2" href="ilteam.html">Scopri il nostro team!</a>
+                <a class = "bigcontainer2__copy__buttons__button2" href="ordina.php">Scopri il nostro team!</a>
                 
             </div>
             
