@@ -87,10 +87,10 @@
                             echo <<<EOD
                                 <div >
                                     <div class ="card_cibo">
-                                        <div >
+                                        <div class = "card_cibo__img">
                                             <img src="../immagini/$foto" alt="$foto">
                                         </div>
-                                        <div >
+                                        <div class ="card_cibo__testo">
                                             <div >
                                                 <p>$nome</p>
 

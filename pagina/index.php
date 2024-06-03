@@ -24,8 +24,8 @@
         <header class = "header">
             <div class = "header__1">
                 <a href="index.php" class ="header__1__copy__logo"><img src="../immagini/bar-counter.png" alt="" class = "img-dim"></a>
-                <a href="index.php" class ="header__1__copy__logo"><img src="../immagini/delivery-bike.png" alt="" class = "img-dim"></a>
-                <a href="index.php" class ="header__1__copy__logo"><img src="../immagini/logout.png" alt="" class = "img-dim"></a>
+                <a href="ordina.php" class ="header__1__copy__logo"><img src="../immagini/delivery-bike.png" alt="" class = "img-dim"></a>
+                <a href="logout.php" class ="header__1__copy__logo"><img src="../immagini/logout.png" alt="" class = "img-dim"></a>
                 <a href="" class ="header__1__icon-bar">
                     <span></span>
                     <span></span>

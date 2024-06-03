@@ -36,13 +36,14 @@
 	
 	<div class="contenuto">
         
-		<h1 style="text-align: center; margin-top: 0px"><?php echo $id_cibo?></h1>
-        <div class="copertina-fr">
+		<h1 style="text-align: center; margin-top: 0px"><?php echo $nome?></h1>
+        <div class="prodotti">
             <?php
-                echo "<img src='../immagini/$foto' alt='$foto'>";
+                echo "<img class = "" src='../immagini/$foto' alt='$foto'>";
             ?>
         </div>
         <div class="descrizione">
+            <p><?php echo $prezzo?></p>
             <?php
                 $paragrafi = explode("\n", $descrizione_txt);
                 foreach ($paragrafi as $paragrafo) {
