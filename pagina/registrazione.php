@@ -8,6 +8,7 @@
     if(isset($_POST["telefono"])) $telefono = $_POST["telefono"];  else $telefono = "";
     if(isset($_POST["provincia"])) $provincia = $_POST["provincia"];  else $provincia = "";
     if(isset($_POST["indirizzo"])) $indirizzo = $_POST["indirizzo"];  else $indirizzo = "";
+    if(isset($_POST["data_iscrizione"])) $data_iscrizione = $_POST["data_iscrizione"];  else $data_iscrizione = "";
 ?>
 
 <!DOCTYPE html>
@@ -63,6 +64,10 @@
                     <td><label for="indirizzo">Indirizzo: </label></td>
                     <td><input type="text" name="indirizzo" id="indirizzo" <?php echo "value = '$indirizzo'" ?>></td>
                 </tr>
+                <tr>
+                    <td><label for="data_iscrizione">Data iscrizione: </label></td>
+                    <td><input type="text" name="data_iscrizione" id="data_iscrizione" <?php echo "value = '$data_iscrizione'" ?>></td>
+                </tr>
             </table>
             <input type="submit" value="Invia">
         </form>
@@ -75,6 +80,7 @@
                 } elseif ($_POST["password"] != $_POST["conferma"]){
                     echo "<p>Le password inserite non corrispondono</p>";
                 } else {
+                    $data_iscrizione = date("Y-m-d H:i:s");
                     require("../data/connessione_db.php");
 
                     $myquery = "SELECT username 
@@ -86,7 +92,7 @@
                         echo "Questo username è già stato usato";
                     } else {
 
-                        $myquery = "INSERT INTO utenti (username, password, nome, cognome, email, telefono, provincia, indirizzo)
+                        $myquery = "INSERT INTO utenti (username, password, nome, cognome, email, telefono, provincia, indirizzo, data_iscrizione)
                                     VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$provincia','$indirizzo')";
 
                         if ($conn->query($myquery) === true) {
