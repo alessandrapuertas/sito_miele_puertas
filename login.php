@@ -13,7 +13,30 @@
     <link rel="stylesheet" href="style.css">
     <title>login snap</title>
 </head>
-<body>
+<body style ="background: rgb(209, 196, 196)">
+    
+    <ul class = "container__menu__2">
+    
+                    <li class = "container__menu__item1 ">
+                        <a href="colazioni.html" class ="container__menu__item__copy1">
+                            colazioni
+                        </a>
+                        <a href="colazioni.html" class ="container__menu__item__icon1">
+                            <img src="immagini/bar-counter.png" alt="" class = "img-dim">
+                        </a>
+                        
+                    </li>
+                    <li class = "container__menu__item2">
+                        <a href="aperitivi.html" class ="container__menu__item__copy2">
+                            aperitivi
+                        </a>
+                        <a href="aperitivi.html" class ="container__menu__item__icon2">
+                            <img src="immagini/add.png" alt="" class = "img-dim">
+                        </a>
+                        
+                    </li>
+        
+    </ul>
     
     <div class = "contenuto">
         
@@ -21,7 +44,7 @@
 		<h2>effettua il login!</h2>
 
         <form action="" method="post">
-            <table class="tab_input">
+            <table style ="text-align: left; margin: auto; padding:5px;">
                 <tr>
                     <td><label for="username">username: </label></td>
                     <td><input type="text" name="username" id="username" value = "<?php echo $username ?>" required></td>
@@ -31,7 +54,7 @@
                     <td><input type="password" name="password" id="password" required></td>
                 </tr>
             </table>
-            <input type="submit" value="accedi">
+            <input style = "padding:3px;" type="submit" value="accedi">
         </form>
         <?php
             if (isset($_POST["username"]) and isset($_POST["password"])) {
