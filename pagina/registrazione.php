@@ -41,8 +41,8 @@
 	padding: 15px;
 	text-align: center;
 	padding-bottom: 40px;">
-        <h1 >bar snap</h1>
-        <h3>Non hai ancora un account? registrati!</h3>
+        <h1 >Bar snap</h1>
+        <h3 style = "font-size: 10px;">Non hai ancora un account? registrati!</h3>
         
 
         <form action="" method="post">
