@@ -58,21 +58,26 @@
                     if(isset($_POST["glutenfree"])){
                         $glutenfree = $_POST["glutenfree"];
                         if($glutenfree == "si"){
-                            $sql = "SELECT id_cibo, nome, foto, descrizione_txt, prezzo, glutenfree, data_iscrizione
-                                FROM cibi  
+                            $sql = "SELECT id_cibo, nome, foto, descrizione_txt, prezzo, glutenfree
+                                FROM cibi 
                                 WHERE nome LIKE '%$nome%'
                                 AND glutenfree = 'si'";
                     }
                     
                     
                     } else {
-                        $sql = "SELECT id_cibo, nome, foto, descrizione_txt, prezzo, glutenfree 
+                        $sql = "SELECT id_cibo, nome, foto, descrizione_txt, prezzo, glutenfree
                             FROM cibi  
                             WHERE nome LIKE '%$nome%'";}
-                    
-                
+                    $sql2 = "SELECT data_iscrizione
+                                FROM utenti
+                                WHERE username = '$username'" ;
+                    $ris2 = $conn->query($sql2) or die("<p>Query fallita!</p>");
+                    $riga2 = $ris2->fetch_assoc();
+                    $data_iscrizione = $riga2['data_iscrizione'];
                     
                     $ris = $conn->query($sql) or die("<p>Query fallita!</p>");
+                    
                     if ($ris->num_rows > 0) {
                         echo "<p>scegli cosa ordinare!</p>";
                     
@@ -81,16 +86,23 @@
                             $nome = $riga["nome"];
                             $foto = $riga["foto"];
                             $descrizione_txt = $riga["descrizione_txt"];
-                            $prezzo = $riga["prezzo"];
+                            
                             $glutenfree = $riga["glutenfree"];
-                            $data_iscrizione = $riga["data_iscrizione"];
+                            
                             $data_odierna = date("Y-m-d H:i:s");
-                            $datetime1 = new DateTime($$data_iscrizione);
+                            
+                            $datetime1 = new DateTime($data_iscrizione);
                             $datetime2 = new DateTime($data_odierna);
                             $tempopassato = $datetime1->diff($datetime2);
                             $giornipassati = $tempopassato->d;
+                            if($giornipassati <=2){
+                                $prezzo = $riga["prezzo"] - ($riga["prezzo"] /100) * 20;
+
+                            } else{
+                                $prezzo = $riga["prezzo"];
+                            }
                             echo <<<EOD
-                                <  div >
+                                <div>
                                     <div class ="card_cibo">
                                         <div class = "card_cibo__img">
                                             <img src="../immagini/$foto" alt="$foto">
@@ -98,6 +110,14 @@
                                         <div class ="card_cibo__testo">
                                             <div >
                                                 <p>$nome</p>
+                                                <p>$data_iscrizione</p>
+                                                <p>$data_odierna</p>
+                                                <p>$giornipassati</p>
+                                                
+                                                
+
+                                                <p></p>
+
 
                                                 <p ><a href="infocibo.php?id_cibo=$id_cibo">scopri di piu!</a></p>
                            
