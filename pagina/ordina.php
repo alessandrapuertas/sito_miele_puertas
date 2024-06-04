@@ -86,11 +86,9 @@
                             $nome = $riga["nome"];
                             $foto = $riga["foto"];
                             $descrizione_txt = $riga["descrizione_txt"];
-                            
                             $glutenfree = $riga["glutenfree"];
                             
                             $data_odierna = date("Y-m-d H:i:s");
-                            
                             $datetime1 = new DateTime($data_iscrizione);
                             $datetime2 = new DateTime($data_odierna);
                             $tempopassato = $datetime1->diff($datetime2);
