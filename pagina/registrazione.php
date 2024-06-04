@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Biblioteca-Registrazione</title>
+    <title>Barsnap-Registrazione</title>
 </head>
 <body style ="background: rgb(209, 196, 196)">
     <div class = "container__menu__2">
@@ -41,7 +41,7 @@
     
 	padding-bottom: 40px;">
         <h1 >bar snap</h1>
-        <h3 >non hai ancora un account? registrati!</h3>
+        <h3 >Non hai ancora un account? registrati!</h3>
         
 
         <form action="" method="post">
