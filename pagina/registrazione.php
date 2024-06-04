@@ -34,11 +34,12 @@
         </div>
         
     </div>
-
-    <div style = "margin: auto;
+    <div class="card-container">
+        <div class="cardd">
+            <div class="card-content">
+            <div style = "margin: auto;
 	padding: 15px;
 	text-align: center;
-    
 	padding-bottom: 40px;">
         <h1 >bar snap</h1>
         <h3 >Non hai ancora un account? registrati!</h3>
@@ -130,6 +131,10 @@
         </p>
         	
     </div>
+                
+            </div>
+        </div>
+    
 </body>
 </html>
 
