@@ -33,17 +33,16 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body style ="background: rgb(209, 196, 196)">
-	
-	<div class="contenuto">
-        
-		<h1 style="text-align: center; margin-top: 0px"><?php echo $nome?></h1>
+	<h1 style="text-align: center; margin-top: 15px"><?php echo $nome?></h1>
+	<div class="contenuto2">
         <div class="prodotti">
             <?php
-                echo "<img class = "" src='../immagini/$foto' alt='$foto'>";
+                echo "<img src='../immagini/$foto' alt='$foto'>";
             ?>
         </div>
         <div class="descrizione">
-            <p><?php echo $prezzo?></p>
+            
+            <p>prezzo:<?php echo $prezzo?></p>
             <?php
                 $paragrafi = explode("\n", $descrizione_txt);
                 foreach ($paragrafi as $paragrafo) {

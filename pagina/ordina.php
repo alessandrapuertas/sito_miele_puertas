@@ -31,9 +31,9 @@
     
 	<div class="contenuto">
 		<h1 style="text-align: center; margin-top: 0px">ordina con noi!</h1>
-		<p>cosa vuoi ordinare?</p>
+		<p >cosa vuoi ordinare?</p>
 		<form method="post" action="">
-			<table style = "text-align: left; margin: auto;">
+			<table style = "text-align:left; margin: auto;">
 				<tr>
 					<td><label for="nome_cibo">cerca:</label></td>
                     <td><input class="input_ricerca" type="text" name="nome_cibo" id="nome_cibo" value="<?php echo isset($_POST['nome_cibo']) ? $_POST['nome_cibo'] : ''; ?>"></td>
@@ -58,7 +58,7 @@
                     if(isset($_POST["glutenfree"])){
                         $glutenfree = $_POST["glutenfree"];
                         if($glutenfree == "si"){
-                            $sql = "SELECT id_cibo, nome, foto, descrizione_txt, prezzo, glutenfree 
+                            $sql = "SELECT id_cibo, nome, foto, descrizione_txt, prezzo, glutenfree, data_iscrizione
                                 FROM cibi  
                                 WHERE nome LIKE '%$nome%'
                                 AND glutenfree = 'si'";
@@ -83,9 +83,14 @@
                             $descrizione_txt = $riga["descrizione_txt"];
                             $prezzo = $riga["prezzo"];
                             $glutenfree = $riga["glutenfree"];
-
+                            $data_iscrizione = $riga["data_iscrizione"];
+                            $data_odierna = date("Y-m-d H:i:s");
+                            $datetime1 = new DateTime($$data_iscrizione);
+                            $datetime2 = new DateTime($data_odierna);
+                            $tempopassato = $datetime1->diff($datetime2);
+                            $giornipassati = $tempopassato->d;
                             echo <<<EOD
-                                <div >
+                                <  div >
                                     <div class ="card_cibo">
                                         <div class = "card_cibo__img">
                                             <img src="../immagini/$foto" alt="$foto">

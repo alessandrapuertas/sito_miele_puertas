@@ -17,28 +17,24 @@
     
     <div class = "container__menu__2">
     
-        <div class = "container__menu__item1 ">
-            <a href="colazioni.html" class ="container__menu__item__copy1">
-                colazioni
-            </a>
-            <a href="colazioni.html" class ="container__menu__item__icon1">
-                <img src="immagini/bar-counter.png" alt="" class = "img-dim">
-            </a>
-            
-        </div>
+        
         <div class = "container__menu__item2">
-            <a href="aperitivi.html" class ="container__menu__item__copy2">
-                aperitivi
+            <a href="pagina/registrazione.php" class ="container__menu__item__copy2">
+                registrati!
             </a>
-            <a href="aperitivi.html" class ="container__menu__item__icon2">
+            <a href="pagina/registrazione.php" class ="container__menu__item__icon2">
                 <img src="immagini/add.png" alt="" class = "img-dim">
             </a>
             
         </div>
         
-</div>
+    </div>
     
-    <div class = "contenuto">
+    <div style ="margin: auto;
+	padding: 15px;
+	text-align: center;
+    
+	padding-bottom: 40px;">
         
         <h1>bar snap</h1>
 		<h2>effettua il login!</h2>
@@ -84,3 +80,27 @@
 </body>
 </html>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+    <script>
+        
+        
+        $(document).ready(function(){
+            $(".container__menu__item__icon2").mouseenter(function(e){
+                $(".container__menu__item__icon2").addClass('is-hidden');
+                e.preventDefault();
+                $(".container__menu__item__copy2").addClass('is-shown');
+                e.preventDefault();
+                
+            });
+            $(".container__menu__item2").mouseleave(function(e){
+                $(".container__menu__item__icon2").removeClass('is-hidden');
+                e.preventDefault();
+                $(".container__menu__item__copy2").removeClass('is-shown');
+                e.preventDefault();
+            });
+        
+
+        });
+        
+        
+    </script>

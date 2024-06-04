@@ -19,14 +19,33 @@
     <link rel="stylesheet" href="../style.css">
     <title>Biblioteca-Registrazione</title>
 </head>
-<body>
-    <?php
-        require("nav.php");
-    ?>
-    <div class="contenuto">
-        <h1>Bar-Registrazione</h1>
+<body style ="background: rgb(209, 196, 196)">
+    <div class = "container__menu__2">
+        
+            
+        <div class = "container__menu__item2">
+            <a href="../login.php" class ="container__menu__item__copy2">
+                login
+            </a>
+            <a href="pagina/registrazione.php" class ="container__menu__item__icon2">
+                <img src="../immagini/enter.png" alt="" class = "img-dim">
+            </a>
+            
+        </div>
+        
+    </div>
+
+    <div style = "margin: auto;
+	padding: 15px;
+	text-align: center;
+    
+	padding-bottom: 40px;">
+        <h1 >bar snap</h1>
+        <h3 >non hai ancora un account? registrati!</h3>
+        
+
         <form action="" method="post">
-            <table class="tab_input tab_registrazione">
+            <table style = "text-align: right;margin: auto;">
                 <tr>
                     <td><label for="username">Username: </label></td>
                     <td><input type="text" name="username" id="username" value="<?php echo $username ?>" required></td>
@@ -64,12 +83,9 @@
                     <td><label for="indirizzo">Indirizzo: </label></td>
                     <td><input type="text" name="indirizzo" id="indirizzo" <?php echo "value = '$indirizzo'" ?>></td>
                 </tr>
-                <tr>
-                    <td><label for="data_iscrizione">Data iscrizione: </label></td>
-                    <td><input type="text" name="data_iscrizione" id="data_iscrizione" <?php echo "value = '$data_iscrizione'" ?>></td>
-                </tr>
+                
             </table>
-            <input type="submit" value="Invia">
+            <input style = "padding:3px"type="submit" value="Invia">
         </form>
 
         <p>
@@ -93,7 +109,7 @@
                     } else {
 
                         $myquery = "INSERT INTO utenti (username, password, nome, cognome, email, telefono, provincia, indirizzo, data_iscrizione)
-                                    VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$provincia','$indirizzo')";
+                                    VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$provincia','$indirizzo','$data_iscrizione')";
 
                         if ($conn->query($myquery) === true) {
                             session_start();
@@ -102,7 +118,7 @@
 						    $conn->close();
 
                             echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
-                            header('Refresh: 5; URL=home.php');
+                            header('Refresh: 5; URL=index.php');
 
                         } else {
                             echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
@@ -112,9 +128,32 @@
             }
             ?>
         </p>
-        <?php 
-            require('footer.php');
-        ?>	
+        	
     </div>
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+    <script>
+        
+        
+        $(document).ready(function(){
+            $(".container__menu__item__icon2").mouseenter(function(e){
+                $(".container__menu__item__icon2").addClass('is-hidden');
+                e.preventDefault();
+                $(".container__menu__item__copy2").addClass('is-shown');
+                e.preventDefault();
+                
+            });
+            $(".container__menu__item2").mouseleave(function(e){
+                $(".container__menu__item__icon2").removeClass('is-hidden');
+                e.preventDefault();
+                $(".container__menu__item__copy2").removeClass('is-shown');
+                e.preventDefault();
+            });
+        
+
+        });
+        
+        
+    </script>
