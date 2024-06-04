@@ -42,7 +42,7 @@
 	text-align: center;
 	padding-bottom: 40px;">
         <h1 >bar snap</h1>
-        <h3 >Non hai ancora un account? registrati!</h3>
+        <h3>Non hai ancora un account? registrati!</h3>
         
 
         <form action="" method="post">
