@@ -11,7 +11,10 @@
 
 	if(isset($_POST['id_cibo'])){
         foreach($_POST['id_cibo'] as $id_cibo) {
-            // mettere tabella nel database
+            
+            $sql = "UPDATE cibi
+                    SET username = '$username'
+                    WHERE id_cibo = '$id_cibo'";
             $conn->query($sql) or die("<p>Query fallita!</p>");
         }
     }	
@@ -77,7 +80,15 @@
                     $data_iscrizione = $riga2['data_iscrizione'];
                     
                     $ris = $conn->query($sql) or die("<p>Query fallita!</p>");
-                    
+                    $data_odierna = date("Y-m-d H:i:s");
+                    $datetime1 = new DateTime($data_iscrizione);
+                    $datetime2 = new DateTime($data_odierna);
+                    $tempopassato = $datetime1->diff($datetime2);
+                    $giornipassati = $tempopassato->days;
+                    if($giornipassati >=365){
+                        
+                        echo "<p>sei registrato da più di un anno, hai uno sconto del 20% su tutti i nostri prodotti!</p>";
+                    }
                     if ($ris->num_rows > 0) {
                         echo "<p>scegli cosa ordinare!</p>";
                     
@@ -88,19 +99,17 @@
                             $descrizione_txt = $riga["descrizione_txt"];
                             $glutenfree = $riga["glutenfree"];
                             
-                            $data_odierna = date("Y-m-d H:i:s");
-                            $datetime1 = new DateTime($data_iscrizione);
-                            $datetime2 = new DateTime($data_odierna);
-                            $tempopassato = $datetime1->diff($datetime2);
-                            $giornipassati = $tempopassato->d;
-                            if($giornipassati <=2){
+                            
+                            if($giornipassati >=365){
                                 $prezzo = $riga["prezzo"] - ($riga["prezzo"] /100) * 20;
-
+                                
                             } else{
                                 $prezzo = $riga["prezzo"];
                             }
                             echo <<<EOD
                                 <div>
+                                    
+                                    
                                     <div class ="card_cibo">
                                         <div class = "card_cibo__img">
                                             <img src="../immagini/$foto" alt="$foto">
@@ -108,9 +117,8 @@
                                         <div class ="card_cibo__testo">
                                             <div >
                                                 <p>$nome</p>
-                                                <p>$data_iscrizione</p>
-                                                <p>$data_odierna</p>
-                                                <p>$giornipassati</p>
+                                                <p>prezzo:$prezzo</p>
+                                                
                                                 
                                                 
 
@@ -143,6 +151,9 @@
 	
 </body>
 </html>
+<?php 
+        require('footer.php');
+?>
 <?php
 	$conn->close();
 ?>
