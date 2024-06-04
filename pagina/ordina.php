@@ -31,7 +31,20 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body style ="background: rgb(209, 196, 196)">
-    
+    <div class = "container__menu__2">
+        
+            
+        <div class = "container__menu__item2">
+            <a href="pagina/index.php" class ="container__menu__item__copy2">
+                home
+            </a>
+            <a href="pagina/index.php" class ="container__menu__item__icon2">
+                <img src="../immagini/bar-counter.png" alt="" class = "img-dim">
+            </a>
+            
+        </div>
+        
+    </div>
 	<div class="contenuto">
 		<h1 style="text-align: center; margin-top: 0px">ordina con noi!</h1>
 		<p >cosa vuoi ordinare?</p>
