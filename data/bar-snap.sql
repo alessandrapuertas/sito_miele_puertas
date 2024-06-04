@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
--- Host:                         localhost
--- Versione server:              10.4.32-MariaDB - mariadb.org binary distribution
+-- Host:                         127.0.0.1
+-- Versione server:              10.4.28-MariaDB - mariadb.org binary distribution
 -- S.O. server:                  Win64
--- HeidiSQL Versione:            12.7.0.6850
+-- HeidiSQL Versione:            12.5.0.6677
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -25,12 +25,16 @@ CREATE TABLE IF NOT EXISTS `cibi` (
   `nome` char(50) DEFAULT NULL,
   `foto` char(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `descrizione_txt` longtext CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '',
+  `prezzo` float DEFAULT NULL,
+  `glutenfree` char(50) DEFAULT NULL,
   PRIMARY KEY (`id_cibo`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dump dei dati della tabella barsnap.cibi: ~1 rows (circa)
-INSERT INTO `cibi` (`id_cibo`, `nome`, `foto`, `descrizione_txt`) VALUES
-	(1, 'brioche', NULL, '');
+-- Dump dei dati della tabella barsnap.cibi: ~3 rows (circa)
+INSERT INTO `cibi` (`id_cibo`, `nome`, `foto`, `descrizione_txt`, `prezzo`, `glutenfree`) VALUES
+	(1, 'brioche', 'croissants.jpg', 'Gli ingredienti principali sono la farina, le uova, il burro, il lievito e lo strutto animale. Per la farcitura le creme più usate sono la confettura, la crema pasticcera e la crema di cioccolato.\r\n\r\nLa brioscia cû tuppu è una variante tipica siciliana, servita spesso in accompagnamento alla granita o riempite con gelato.\r\n\r\nIl termine brioche viene usato nelle regioni dell\'Italia settentrionale per indicare il cornetto', 1.5, 'si'),
+	(2, 'cookie', 'croissants.jpg', '', 3, 'no'),
+	(3, 'fetta di torta', 'croissants.jpg', '', 3, 'si');
 
 -- Dump della struttura di tabella barsnap.utenti
 CREATE TABLE IF NOT EXISTS `utenti` (
@@ -40,15 +44,18 @@ CREATE TABLE IF NOT EXISTS `utenti` (
   `cognome` char(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `email` char(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `telefono` char(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
-  `comune` char(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `provincia` char(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `indirizzo` char(40) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `socio` int(11) DEFAULT NULL,
+  `data_iscrizione` date DEFAULT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='info utente';
 
--- Dump dei dati della tabella barsnap.utenti: ~2 rows (circa)
-INSERT INTO `utenti` (`username`, `password`, `nome`, `cognome`, `email`, `telefono`, `comune`, `indirizzo`) VALUES
-	('ale_pue', '1234', 'alessandra', 'puertas', 'alessandra.puertas@l', '3333333333', 'arcore', 'via adda'),
-	('seremyele', '5678', 'serena', 'myele', 'serenea.miele@liceob', '1234567890', 'vimercate', 'via adda');
+-- Dump dei dati della tabella barsnap.utenti: ~3 rows (circa)
+INSERT INTO `utenti` (`username`, `password`, `nome`, `cognome`, `email`, `telefono`, `provincia`, `indirizzo`, `socio`, `data_iscrizione`) VALUES
+	('ale_pue', '1234', 'alessandra', 'puertas', 'alessandra.puertas@l', '3333333333', 'arcore', 'via adda', NULL, NULL),
+	('pancho', '5555', 'pancho', 'oe', 'wjcn', '7777', 'ewkjbd', 'wkjdb', NULL, '2024-06-03'),
+	('seremyele', '5678', 'serena', 'myele', 'serenea.miele@liceob', '1234567890', 'vimercate', 'via adda', NULL, NULL);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
